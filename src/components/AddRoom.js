@@ -4,10 +4,9 @@ import { useNavigate } from 'react-router-dom'
 import { db, storage } from './Firebase'
 
 import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage'
-import { collection, addDoc, Timestamp, query, orderBy, onSnapshot, doc } from 'firebase/firestore'
+import { collection, addDoc, Timestamp, query, orderBy, onSnapshot} from 'firebase/firestore'
 
 export default function AddRoom() {
-	const nav = useNavigate()
 	const [add, setAddCategory] = useState('')
 	const [addRoomAddress, setAddRoomAddress] = useState('')
 	const [addState, setAddState] = useState('')
@@ -19,9 +18,8 @@ export default function AddRoom() {
 	const [file, setFile] = useState(null)
 
 	const [fileName, setFileName] = useState(null)
-	const [percent, setPercent] = useState(false)
 	const [imageUrl, setImageUrl] = useState(null)
-	const [taskcompletionStatus, settaskcompletionStatus] = useState('Pending')
+	const [taskcompletionStatus] = useState('Pending')
 	const [allCategory, SetCategory] = useState([])
 	const [allCity, SetCity] = useState([])
 
@@ -130,7 +128,8 @@ export default function AddRoom() {
 		getallcategory()
 		getallcity()
 
-		if (!!imageUrl) saveData()
+		if (!!imageUrl)
+		 saveData()
 	}, [imageUrl])
 
 	return (

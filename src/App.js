@@ -28,7 +28,6 @@ import UpdateRoom from './components/UpdateRoom'
 import UserProfile from './components/UserProfile'
 import ForgotPAssword from './components/ForgotPassword'
 import OffcanvasExample from './components/Search'
-import Jalandhar from './components/Pages/Jalandhar'
 import ResultPage from './components/Pages/ResultPage'
 
 function App() {

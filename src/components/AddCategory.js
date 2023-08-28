@@ -4,7 +4,7 @@ import { collection, addDoc, Timestamp } from 'firebase/firestore'
 
 export default function AddCategory() {
 	const [add, setAdd] = useState('')
-	const [taskcompletionStatus, settaskcompletionStatus] = useState('Pending')
+	const [taskcompletionStatus] = useState('Pending')
 	const handleform = async data => {
 		data.preventDefault()
 		try {

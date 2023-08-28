@@ -1,36 +1,8 @@
 import * as React from 'react'
-import { Link } from 'react-router-dom'
 export default function City() {
 	return (
 		<>
-			{/* 
-  <main id="main">
-
-    <section class="intro-single">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-lg-8">
-            <div class="title-single-box">
-              <h1 class="title-single"> View Contact</h1>
-            </div>
-          </div>
-                </div>
-      </div>
-    </section>
-    <div className="row ms-5 ps-5">
-        <table className="table table-bordered table-responsive">
-            <tr>
-                <th>Id</th>
-                <th> City Name</th>
-                <th>Status</th>
-                <th>Created_at</th>
-            </tr>
-        </table>
-    </div>
-
-  </main>
-
- */}
+		
 			<div class="container mt-5">
 				<div class="row mt-5 ">
 					<div class="col-md-12 col-lg-12 mt-5 mx-auto logincolor">

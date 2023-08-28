@@ -36,22 +36,22 @@ export default function Footer() {
 									<div class="w-body-a">
 										<ul class="list-unstyled">
 											<li class="item-list-a">
-												<i class="bi bi-chevron-right"></i> <a href="#">Site Map</a>
+												<i class="bi bi-chevron-right"></i> <button>Site Map</button>
 											</li>
 											<li class="item-list-a">
-												<i class="bi bi-chevron-right"></i> <a href="#">Legal</a>
+												<i class="bi bi-chevron-right"></i> <button >Legal</button>
 											</li>
 											<li class="item-list-a">
-												<i class="bi bi-chevron-right"></i> <a href="#">Agent Admin</a>
+												<i class="bi bi-chevron-right"></i> <button >Agent Admin</button>
 											</li>
 											<li class="item-list-a">
-												<i class="bi bi-chevron-right"></i> <a href="#">Careers</a>
+												<i class="bi bi-chevron-right"></i> <button>Careers</button>
 											</li>
 											<li class="item-list-a">
-												<i class="bi bi-chevron-right"></i> <a href="#">Affiliate</a>
+												<i class="bi bi-chevron-right"></i> <button >Affiliate</button>
 											</li>
 											<li class="item-list-a">
-												<i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a>
+												<i class="bi bi-chevron-right"></i> <button >Privacy Policy</button>
 											</li>
 										</ul>
 									</div>
@@ -66,22 +66,30 @@ export default function Footer() {
 								<div class="w-body-a">
 									<ul class="list-unstyled">
 										<li class="item-list-a">
-											<i class="bi bi-chevron-right"></i> <a href="#">Venezuela</a>
+											<i class="bi bi-chevron-right"></i> 
+											
+											<button >Venezuela</button>
 										</li>
 										<li class="item-list-a">
-											<i class="bi bi-chevron-right"></i> <a href="#">China</a>
+											<i class="bi bi-chevron-right"></i>
+											
+											 <button >China</button>
 										</li>
 										<li class="item-list-a">
-											<i class="bi bi-chevron-right"></i> <a href="#">Hong Kong</a>
+											<i class="bi bi-chevron-right"></i>
+											 <button>Hong Kong</button>
 										</li>
 										<li class="item-list-a">
-											<i class="bi bi-chevron-right"></i> <a href="#">Argentina</a>
+											<i class="bi bi-chevron-right"></i> 
+											<button >Argentina</button>
 										</li>
 										<li class="item-list-a">
-											<i class="bi bi-chevron-right"></i> <a href="#">Singapore</a>
+											<i class="bi bi-chevron-right"></i> 
+											<button >Singapore</button>
 										</li>
 										<li class="item-list-a">
-											<i class="bi bi-chevron-right"></i> <a href="#">Philippines</a>
+											<i class="bi bi-chevron-right"></i> 
+											<button>Philippines</button>
 										</li>
 									</ul>
 								</div>
@@ -97,40 +105,40 @@ export default function Footer() {
 							<nav class="nav-footer">
 								<ul class="list-inline">
 									<li class="list-inline-item">
-										<a href="#">Home</a>
+										<button >Home</button>
 									</li>
 									<li class="list-inline-item">
-										<a href="#">About</a>
+										<button >About</button>
 									</li>
 									<li class="list-inline-item">
-										<a href="#">Property</a>
+										<button >Property</button>
 									</li>
 									<li class="list-inline-item">
-										<a href="#">Contact</a>
+										<button >Contact</button>
 									</li>
 								</ul>
 							</nav>
 							<div class="socials-a">
 								<ul class="list-inline">
 									<li class="list-inline-item">
-										<a href="#">
+										<button >
 											<i class="bi bi-facebook" aria-hidden="true"></i>
-										</a>
+										</button>
 									</li>
 									<li class="list-inline-item">
-										<a href="#">
+										<button >
 											<i class="bi bi-twitter" aria-hidden="true"></i>
-										</a>
+										</button>
 									</li>
 									<li class="list-inline-item">
-										<a href="#">
+										<button >
 											<i class="bi bi-instagram" aria-hidden="true"></i>
-										</a>
+										</button>
 									</li>
 									<li class="list-inline-item">
-										<a href="#">
+										<button >
 											<i class="bi bi-linkedin" aria-hidden="true"></i>
-										</a>
+										</button>
 									</li>
 								</ul>
 							</div>

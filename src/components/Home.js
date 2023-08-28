@@ -166,24 +166,24 @@ export default function Home() {
 											<div class="socials-footer d-flex justify-content-center">
 												<ul class="list-inline">
 													<li class="list-inline-item">
-														<a href="#" class="link-one">
+														<button  class="link-one">
 															<i class="bi bi-facebook" aria-hidden="true"></i>
-														</a>
+														</button>
 													</li>
 													<li class="list-inline-item">
-														<a href="#" class="link-one">
+														<button class="link-one">
 															<i class="bi bi-twitter" aria-hidden="true"></i>
-														</a>
+														</button>
 													</li>
 													<li class="list-inline-item">
-														<a href="#" class="link-one">
+														<button class="link-one">
 															<i class="bi bi-instagram" aria-hidden="true"></i>
-														</a>
+														</button>
 													</li>
 													<li class="list-inline-item">
-														<a href="#" class="link-one">
+														<button  class="link-one">
 															<i class="bi bi-linkedin" aria-hidden="true"></i>
-														</a>
+														</button>
 													</li>
 												</ul>
 											</div>
@@ -200,10 +200,10 @@ export default function Home() {
 										<div class="card-header-d">
 											<div class="card-title-d align-self-center">
 												<h3 class="title-d">
-													<a href="agent-single.html" class="link-two">
+													<button href="agent-single.html" class="link-two">
 														Stiven Spilver
 														<br /> Darw
-													</a>
+													</button>
 												</h3>
 											</div>
 										</div>
@@ -224,24 +224,24 @@ export default function Home() {
 											<div class="socials-footer d-flex justify-content-center">
 												<ul class="list-inline">
 													<li class="list-inline-item">
-														<a href="#" class="link-one">
+														<button  class="link-one">
 															<i class="bi bi-facebook" aria-hidden="true"></i>
-														</a>
+														</button>
 													</li>
 													<li class="list-inline-item">
-														<a href="#" class="link-one">
+														<button class="link-one">
 															<i class="bi bi-twitter" aria-hidden="true"></i>
-														</a>
+														</button>
 													</li>
 													<li class="list-inline-item">
-														<a href="#" class="link-one">
+														<button class="link-one">
 															<i class="bi bi-instagram" aria-hidden="true"></i>
-														</a>
+														</button>
 													</li>
 													<li class="list-inline-item">
-														<a href="#" class="link-one">
+														<button class="link-one">
 															<i class="bi bi-linkedin" aria-hidden="true"></i>
-														</a>
+														</button>
 													</li>
 												</ul>
 											</div>
@@ -258,10 +258,10 @@ export default function Home() {
 										<div class="card-header-d">
 											<div class="card-title-d align-self-center">
 												<h3 class="title-d">
-													<a href="agent-single.html" class="link-two">
+													<button href="agent-single.html" class="link-two">
 														Emma Toledo
 														<br /> Cascada
-													</a>
+													</button>
 												</h3>
 											</div>
 										</div>
@@ -282,24 +282,24 @@ export default function Home() {
 											<div class="socials-footer d-flex justify-content-center">
 												<ul class="list-inline">
 													<li class="list-inline-item">
-														<a href="#" class="link-one">
+														<button class="link-one">
 															<i class="bi bi-facebook" aria-hidden="true"></i>
-														</a>
+														</button>
 													</li>
 													<li class="list-inline-item">
-														<a href="#" class="link-one">
+														<button class="link-one">
 															<i class="bi bi-twitter" aria-hidden="true"></i>
-														</a>
+														</button>
 													</li>
 													<li class="list-inline-item">
-														<a href="#" class="link-one">
+														<button class="link-one">
 															<i class="bi bi-instagram" aria-hidden="true"></i>
-														</a>
+														</button>
 													</li>
 													<li class="list-inline-item">
-														<a href="#" class="link-one">
+														<button class="link-one">
 															<i class="bi bi-linkedin" aria-hidden="true"></i>
-														</a>
+														</button>
 													</li>
 												</ul>
 											</div>

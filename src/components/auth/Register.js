@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { db, storage } from '../Firebase'
-import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage'
+import { db } from '../Firebase'
 import { collection, addDoc, Timestamp } from 'firebase/firestore'
 
 import { createUserWithEmailAndPassword } from 'firebase/auth'
@@ -9,20 +8,16 @@ import { auth } from '../Firebase'
 import CustomInput from '../layout/CustomInput'
 
 export default function Register({ onNavigate }) {
-	const nav = useNavigate()
 	const [name, setName] = useState('')
 	const [email, setEmail] = useState('')
 	const [contact, setContact] = useState('')
 	const [zip, setZip] = useState('')
-	const [file, setFile] = useState(null)
-	const [fileName, setFileName] = useState(null)
-
-	const [image, setImage] = useState('')
+	const [image] = useState('')
 	const [address, setAddress] = useState('')
 	const [gender, setGender] = useState('')
 	const [password, setPassword] = useState('')
 	const [terms, setTerms] = useState('')
-	const [taskcompletionStatus, settaskcompletionStatus] = useState('Pending')
+	const [taskcompletionStatus] = useState('Pending')
 
 	const handleSubmit = async e => {
 		e.preventDefault()

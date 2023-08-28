@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
 export default function About() {
 	useEffect(() => {
 		const jsFiles = ['/assets/assets/js/extra.js']

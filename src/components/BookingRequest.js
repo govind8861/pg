@@ -27,7 +27,7 @@ export default function BookingRequest() {
 	const [addRoomAddress, setAddRoomAddress] = useState('')
 	const [addCity, setAddCity] = useState('')
 	const [addDate, setDate] = useState('')
-	const [taskcompletionStatus, settaskcompletionStatus] = useState('Pending')
+	const [taskcompletionStatus] = useState('Pending')
 
 	const handleform = async data => {
 		data.preventDefault()

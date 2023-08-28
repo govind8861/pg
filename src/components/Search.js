@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { db } from './Firebase'
-import { collection, query, orderBy, onSnapshot, doc, deleteDoc } from 'firebase/firestore'
+import { collection, query, orderBy, onSnapshot } from 'firebase/firestore'
 
-import { Link, useNavigate } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 export default function Search() {
 	// const Navigation = useNavigate()

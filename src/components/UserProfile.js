@@ -1,28 +1,11 @@
-import { Link } from 'react-router-dom'
-import { db } from './Firebase'
 
-import { auth } from './Firebase'
+import { db } from './Firebase'
 import { useState, useEffect } from 'react'
-import { collection, query, orderBy, onSnapshot, doc, deleteDoc, updateDoc } from 'firebase/firestore'
 import { getAuth } from 'firebase/auth'
 
 export default function UserProfile() {
-	const [allTask, SetTask] = useState([])
-  const [userData, setUserData] = useState(null);
+	const [allTask] = useState([])
 
-
-	// useEffect(() => {
-	// 	const q = query(collection(db, 'tasks'), orderBy('created', 'asc'))
-	// 	onSnapshot(q, querySnapshot => {
-	// 		// console.log(querySnapshot.docs)
-	// 		SetTask(
-	// 			querySnapshot.docs.map(doc => ({
-	// 				id: doc.id,
-	// 				data: doc.data(),
-	// 			})),
-	// 		)
-	// 	})
-	// }, [])
   
   useEffect(() => {
     const user = getAuth().currentUser;

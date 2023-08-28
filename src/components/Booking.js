@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+
 import { db } from './Firebase'
 import { useState, useEffect } from 'react'
 import { collection, query, orderBy, onSnapshot, doc, deleteDoc, updateDoc } from 'firebase/firestore'
@@ -112,7 +112,7 @@ export default function Booking() {
 
 								<td>
 									{bookingRequests.data.taskcompletionStatus}
-									{bookingRequests.data.taskcompletionStatus != 'Pending' ? (
+									{bookingRequests.data.taskcompletionStatus !== 'Pending' ? (
 										''
 									) : (
 										<input type="checkbox" onChange={data => completeTask(bookingRequests.id)} />

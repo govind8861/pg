@@ -16,7 +16,6 @@ export default function ForgotPAssword() {
 	//     </div>
 	//     </>
 	// )
-	const nav = useNavigate()
 	const handleSubmit = async e => {
 		e.preventDefault()
 		const emailVal = e.target.add.value

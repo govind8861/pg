@@ -1,5 +1,5 @@
 import { db } from './Firebase'
-import { collection, updateDoc, doc, getDoc, setDoc } from 'firebase/firestore'
+import {  updateDoc, doc, getDoc } from 'firebase/firestore'
 
 import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
@@ -7,10 +7,10 @@ import { useEffect } from 'react'
 export default function UpdateCategory() {
 	const param = useParams()
 	const nav = useNavigate()
-	const [id, setId] = useState(param.id)
+	const [id] = useState(param.id)
 	useEffect(() => {
 		getSingleTaskData()
-	}, [])
+	})
 
 	const [add, setAdd] = useState('')
 	const [taskcompletionStatus, settaskcompletionStatus] = useState('Pending')

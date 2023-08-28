@@ -69,7 +69,7 @@ export default function Jalandhar() {
 										<div class="card-overlay-a-content">
 											<div class="card-header-a">
 												<h2 class="card-title-a">
-													<a href="#">{AddRooms.data.addCategory}</a>
+													<button >{AddRooms.data.addCategory}</button>
 												</h2>
 											</div>
 											<div class="card-body-a">
@@ -78,10 +78,10 @@ export default function Jalandhar() {
 														rent |₹ {AddRooms.data.addRent}{' '}
 													</span>
 												</div>
-												<a href="property-single.html" class="link-a">
+												<button class="link-a">
 													Click here to view
 													<span class="bi bi-chevron-right"></span>
-												</a>
+												</button>
 											</div>
 										</div>
 									</div>

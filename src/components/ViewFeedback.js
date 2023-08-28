@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom'
+
 import { db } from './Firebase'
 import { useState, useEffect } from 'react'
-import { collection, query, orderBy, onSnapshot, doc, deleteDoc, updateDoc } from 'firebase/firestore'
+import { collection, query, orderBy, onSnapshot } from 'firebase/firestore'
 
 export default function ViewFeedback() {
 	const [allTask, SetTask] = useState([])
@@ -25,29 +25,7 @@ export default function ViewFeedback() {
 		const returndate = s[2] + '-' + s[1] + '-' + s[3]
 		return returndate
 	}
-	const deleteHandle = async id => {
-		const taskDocRef = doc(db, 'Feedbacks', id)
-		try {
-			await deleteDoc(taskDocRef)
-		} catch (err) {
-			alert(err)
-		}
-	}
-	const completeTask = async id => {
-		// alert(id)
-
-		// update Status
-		const taskDocRef = doc(db, 'Feedbacks', id)
-		try {
-			await updateDoc(taskDocRef, {
-				taskcompletionStatus: 'Completed',
-			})
-			alert('Record Updated')
-		} catch (err) {
-			alert(err)
-		}
-	}
-
+	
 	return (
 		<>
 			<div class="container mt-5">

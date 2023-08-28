@@ -5,7 +5,7 @@ import { collection, addDoc, Timestamp } from 'firebase/firestore'
 export default function AddCity() {
 	const [addCity, setAddCity] = useState('')
 	const [addState, setAddState] = useState('')
-	const [taskcompletionStatus, settaskcompletionStatus] = useState('Pending')
+	const [taskcompletionStatus ] = useState('Pending')
 
 	const handleform = async data => {
 		data.preventDefault()

@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import { db } from './Firebase'
 import { collection, addDoc, Timestamp } from 'firebase/firestore'
@@ -10,7 +9,7 @@ export default function Contact() {
 	const [addEmail, setAddEmail] = useState('')
 	const [addSubject, setAddSubject] = useState('')
 	const [addMessage, setAddMessage] = useState('')
-	const [taskcompletionStatus, settaskcompletionStatus] = useState('Pending')
+	const [taskcompletionStatus] = useState('Pending')
 
 	const handleform = async data => {
 		data.preventDefault()
@@ -78,6 +77,7 @@ export default function Contact() {
 											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes+Square!5e0!3m2!1ses-419!2sve!4v1510329142834"
 											width="100%"
 											height="450"
+											title="Example Website"
 											frameborder="0"
 											allowfullscreen
 										></iframe>
@@ -87,7 +87,7 @@ export default function Contact() {
 							<div class="col-sm-12 section-t8">
 								<div class="row">
 									<div class="col-md-7">
-										<form method="post" role="form" onSubmit={handleform}>
+										<form method="post" onSubmit={handleform}>
 											<div class="row">
 												<div class="col-md-6 mb-3">
 													<div class="form-group">
@@ -205,24 +205,24 @@ export default function Contact() {
 													<div class="socials-footer">
 														<ul class="list-inline">
 															<li class="list-inline-item">
-																<a href="#" class="link-one">
+																<button class="link-one">
 																	<i class="bi bi-facebook" aria-hidden="true"></i>
-																</a>
+																</button>
 															</li>
 															<li class="list-inline-item">
-																<a href="#" class="link-one">
+																<button class="link-one">
 																	<i class="bi bi-twitter" aria-hidden="true"></i>
-																</a>
+																</button>
 															</li>
 															<li class="list-inline-item">
-																<a href="#" class="link-one">
+																<button class="link-one">
 																	<i class="bi bi-instagram" aria-hidden="true"></i>
-																</a>
+																</button>
 															</li>
 															<li class="list-inline-item">
-																<a href="#" class="link-one">
+																<button class="link-one">
 																	<i class="bi bi-linkedin" aria-hidden="true"></i>
-																</a>
+																</button>
 															</li>
 														</ul>
 													</div>

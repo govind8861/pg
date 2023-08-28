@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
 export default function Property() {
 	useEffect(() => {
 		const jsFiles = ['/assets/assets/js/extra.js']
@@ -207,20 +206,20 @@ export default function Property() {
 										<div class="card-overlay-a-content">
 											<div class="card-header-a">
 												<h2 class="card-title-a">
-													<a href="#">
+													<button >
 														204 Mount
 														<br /> Olive Road Two
-													</a>
+													</button>
 												</h2>
 											</div>
 											<div class="card-body-a">
 												<div class="price-box d-flex">
 													<span class="price-a">rent | $ 12.000</span>
 												</div>
-												<a href="property-single.html" class="link-a">
+												<button class="link-a">
 													Click here to view
 													<span class="bi bi-chevron-right"></span>
-												</a>
+												</button>
 											</div>
 											<div class="card-footer-a">
 												<ul class="card-info d-flex justify-content-around">
@@ -258,10 +257,10 @@ export default function Property() {
 										<div class="card-overlay-a-content">
 											<div class="card-header-a">
 												<h2 class="card-title-a">
-													<a href="#">
+													<button href="#">
 														204 Mount
 														<br /> Olive Road Two
-													</a>
+													</button>
 												</h2>
 											</div>
 											<div class="card-body-a">
@@ -309,10 +308,10 @@ export default function Property() {
 										<div class="card-overlay-a-content">
 											<div class="card-header-a">
 												<h2 class="card-title-a">
-													<a href="#">
+													<button >
 														204 Mount
 														<br /> Olive Road Two
-													</a>
+													</button>
 												</h2>
 											</div>
 											<div class="card-body-a">
@@ -360,10 +359,10 @@ export default function Property() {
 										<div class="card-overlay-a-content">
 											<div class="card-header-a">
 												<h2 class="card-title-a">
-													<a href="#">
+													<button >
 														204 Mount
 														<br /> Olive Road Two
-													</a>
+													</button>
 												</h2>
 											</div>
 											<div class="card-body-a">
@@ -411,10 +410,10 @@ export default function Property() {
 										<div class="card-overlay-a-content">
 											<div class="card-header-a">
 												<h2 class="card-title-a">
-													<a href="#">
+													<button >
 														204 Mount
 														<br /> Olive Road Two
-													</a>
+													</button>
 												</h2>
 											</div>
 											<div class="card-body-a">
@@ -462,10 +461,10 @@ export default function Property() {
 										<div class="card-overlay-a-content">
 											<div class="card-header-a">
 												<h2 class="card-title-a">
-													<a href="#">
+													<button >
 														204 Mount
 														<br /> Olive Road Two
-													</a>
+													</button>
 												</h2>
 											</div>
 											<div class="card-body-a">

@@ -88,12 +88,12 @@ export default function ManageRoom() {
 								<td>{AddRooms.data.addRent}</td>
 								<td>{AddRooms.data.addAccomodation}</td>
 								<td>
-									<img src={AddRooms.data.image} style={{ width: '100px' }}></img>
+									<img src={AddRooms.data.image} style={{ width: '100px' }} alt='image'></img>
 								</td>
 								<td>{AddRooms.data.addDescription}</td>
 								<td>
 									{AddRooms.data.taskcompletionStatus}
-									{AddRooms.data.taskcompletionStatus != 'Pending' ? (
+									{AddRooms.data.taskcompletionStatus !== 'Pending' ? (
 										''
 									) : (
 										<input type="checkbox" onChange={data => completeTask(AddRooms.id)} />

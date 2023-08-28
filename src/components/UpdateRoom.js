@@ -1,5 +1,5 @@
 import { db, storage } from './Firebase'
-import { collection, updateDoc, doc, getDoc, setDoc } from 'firebase/firestore'
+import { updateDoc, doc, getDoc } from 'firebase/firestore'
 
 import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
@@ -9,7 +9,7 @@ import { deleteObject, getDownloadURL, ref, uploadBytesResumable } from 'firebas
 export default function UpdateRoom() {
 	const param = useParams()
 	const nav = useNavigate()
-	const [id, setId] = useState(param.id)
+	const [id] = useState(param.id)
 	
 	const [addCategory, setAddCategory] = useState('')
 	const [addRoomAddress, setAddRoomAddress] = useState('')
@@ -20,7 +20,6 @@ export default function UpdateRoom() {
 	const [image, setImage] = useState('')
 	const [addDescription, setAddDesccription] = useState('')
 	const [file, setFile] = useState(null)
-	const [percent, setPercent] = useState(false)
 	const [imageUrl, setImageUrl] = useState(null)
 	const [taskcompletionStatus, settaskcompletionStatus] = useState('Pending')
 	const [fileName, setFileName] = useState()
@@ -28,7 +27,7 @@ export default function UpdateRoom() {
 
 	useEffect(() => {
 		getSingleTaskData()
-	}, [])
+	})
 
 	const getSingleTaskData = async () => {
 		const taskDocRef = doc(db, 'AddRooms', id)

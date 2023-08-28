@@ -7,15 +7,10 @@ import CustomInput from '../layout/CustomInput'
 import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth'
 import { auth, googleProvider } from '../Firebase'
 import 'react-responsive-modal/styles.css'
-import { Modal } from 'react-responsive-modal'
 
 export default function Login({ onNavigate }) {
-	const nav = useNavigate()
 	const [email, setEmail] = useState('')
 	const [pass, setPass] = useState('')
-	const [isLogin, setIsLogin] = useState(false)
-
-	const [showPassword, setShowPassword] = useState(false)
 	// const handleform =(data)=>{
 	//     data.preventDefault()
 	//     if(email =="govindmaurya8699@gmail.com" && pass=="gobind"){
@@ -33,7 +28,7 @@ export default function Login({ onNavigate }) {
 		await signInWithEmailAndPassword(auth, email, pass)
 			.then(userCredential => {
 				// Signed in
-				const user = userCredential.user
+				// const user = userCredential.user
 				alert('Login Successful')
 				onNavigate('/home')
 
@@ -64,9 +59,6 @@ export default function Login({ onNavigate }) {
 		//     });
 	}
 
-	const handleTogglePassword = () => {
-		setShowPassword(prevShowPassword => !prevShowPassword)
-	}
 
 	const handlePasswordChange = data => {
 		setPass(data.target.value)
